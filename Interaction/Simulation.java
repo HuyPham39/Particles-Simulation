@@ -10,7 +10,7 @@ public class Simulation {
 
     private Particle[] particles = new Particle[50];
     private ObstacleNode obstacleList = ObstacleAPI.getObstacles();
-    private double elasticity = 0.8;
+    private double elasticity = 1.0;
     private int numParticles = 0;
     private double gravity = -1.0;
     private PhysicsEngine physicsEngine = new PhysicsEngine();
