@@ -1,0 +1,22 @@
+# Use an explicit Python version instead of generic '3'
+FROM python:3.11-slim
+
+# Set environment variables early (better for layer caching)
+ENV FLASK_APP=api.py \
+    FLASK_RUN_HOST=0.0.0.0 \
+    FLASK_ENV=production \
+    DATABASE_URL=postgresql://myuser:mypassword@postgres:5432/mydb
+
+# Configure working directory
+WORKDIR /server
+
+# Install dependencies first for better layer caching
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code (after dependencies)
+COPY . .
+
+# Expose port and run command (single CMD)
+EXPOSE 5000
+CMD ["flask", "run"]

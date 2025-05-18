@@ -1,14 +1,3 @@
 *.class
 sketch.properties
-TestBench.java
-*.autosave
-*.html
-*.js
-*.md
-*.png
-*.svg
-*.css
-LICENSE
-COPYRIGHT
-ApiExample
-element-list
+venv

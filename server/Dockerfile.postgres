@@ -1,0 +1,12 @@
+FROM postgres:14
+
+# Environment variables for database configuration
+ENV POSTGRES_USER=myuser
+ENV POSTGRES_PASSWORD=mypassword
+ENV POSTGRES_DB=mydb
+
+# Copy initialization scripts
+COPY ./database/init.sql /docker-entrypoint-initdb.d/
+
+# Default port exposure
+EXPOSE 5432c

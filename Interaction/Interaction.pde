@@ -35,10 +35,10 @@ void draw() {
 
 void keyPressed() {
   if (key == '+') {
-    simulation.addParticles(50);
+    simulation.addParticles(2);
   }
   else if (key == '-') {
-    simulation.removeParticles(50);
+    simulation.removeParticles(2);
   }
 }
 

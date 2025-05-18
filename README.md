@@ -16,7 +16,8 @@ A simulation application that aims to visualize physical interactions between pa
 
 * Install Processing
 * Pull the repository and open it in Processing.exe
-* Add the dependencies inside folder "code" into your Processing sketchbook by navigating to Sketch/Add File..
-* Run the database prior to using the program, otherwise it will crash
-  + You can either run it on your local machine or on a Virtual Machine by initating the Docker image 
+* Add all of the dependencies inside folder "lib" into your Processing sketchbook by navigating to Sketch/Add File..
+* Run api.py prior to using the program, otherwise it will crash
+  + You can either run it on your local machine or on a Virtual Machine by initating the Docker image
+  + Make sure you have the required dependency, i.e. Flask
 * Click Run or Ctrl + R
