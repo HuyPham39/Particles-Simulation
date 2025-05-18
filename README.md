@@ -9,7 +9,7 @@ Huy Pham
 A simulation application that aims to visualize physical interactions between particles and obstacles using Processing.
 
 * Gravity is set to default as -1.0 m/s^2
-* Elasticity is a variable that can be changed, defaultly as 0.6
+* Elasticity is a variable that represents the coefficient of restitution, defaultly as 0.6
 * Obstacles' positions are constantly updated to the database 
 
 ### How to run the program
